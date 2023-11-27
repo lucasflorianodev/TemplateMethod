@@ -1,7 +1,12 @@
-// Exemplo de uso
 public class Main {
     public static void main(String[] args) {
-        DataMiner miner = new PDFDataMiner();
-        miner.mine("data.pdf");
+        DataMiner pdfMiner = new PDFDataMiner();
+        pdfMiner.mine("data.pdf");
+
+        DataMiner csvMiner = new CSVDataMiner();
+        csvMiner.mine("data.csv");
+
+        DataMiner docsMiner = new DocsDataMiner();
+        docsMiner.mine("data.docx");
     }
 }
